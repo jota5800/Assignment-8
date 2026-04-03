@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  color: #1f1f1f;
+  background: #ffffff;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#formstart {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.outline3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.outline4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.instructions,
+.help-text {
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+fieldset {
+  border: 1px solid #666;
+  padding: 1rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.nested-fieldset {
+  margin-top: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.35rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  max-width: 36rem;
+  padding: 0.6rem;
+  border: 1px solid #666;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 8rem;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.radio-option label {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.star {
+  color: #b00020;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #ffffff;
+  color: #000000;
+  padding: 0.75rem 1rem;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  outline: 3px solid #005fcc;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+textarea:focus,
+select:focus,
+select:active,
+input:focus,
+input:active,
+input:focus + label,
+input:active + label,
+label[for]:focus,
+label[for]:active,
+button:focus,
+button:active {
+  color: #bf1722 !important;
+  background-color: #fff2a8 !important;
+  outline: solid #03c medium;
+}
+
+button {
+  padding: 0.8rem 1rem;
+  border: 1px solid #333;
+  background: #f4f4f4;
+  cursor: pointer;
+}

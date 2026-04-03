@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="accessibility, universal design,
+alternate format, web design, disability, higher education, ADA, Section 508,
+accommodations, assistive technology, DOJ, Department of Justice, WAI" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AHG Presenter Proposal Form 2020 | Accessing Higher Ground</title>
+
+<link rel='stylesheet' id='Lora-css' href='//fonts.googleapis.com/css?family=Lora%3A400%2C700&#038;ver=4.4.2' type='text/css' media='all' />
+<link rel="stylesheet" href="ahgformstyle2020after.css" type="text/css" media="screen" />
+
+<!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a class="skip-link" href="#maincontent">Skip to main content</a>
+
+<main id="maincontent">
+  <header>
+    <h1 id="formstart">AHG Presenter Proposal Form 2020</h1>
+    <p class="outline3">Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 - 20, 2020</p>
+    <p class="instructions">Complete the form below to submit a presenter proposal. Fields marked <span class="star" aria-hidden="true">*</span><span class="sr-only">required</span> are required.</p>
+  </header>
+
+  <form action="AHG_saveprop2020.php" method="post" id="AHGproposalform2020" novalidate>
+    <fieldset>
+      <legend class="outline4">Speaker Information</legend>
+
+      <h2>1st Presenter</h2>
+
+      <div class="form-row">
+        <label for="fstspkr1">First Name <span class="star" aria-hidden="true">*</span></label>
+        <input id="fstspkr1" name="fstspkr1" type="text" required aria-required="true" />
+      </div>
+
+      <div class="form-row">
+        <label for="lstname1">Last Name <span class="star" aria-hidden="true">*</span></label>
+        <input id="lstname1" name="lstname1" type="text" required aria-required="true" />
+      </div>
+
+      <div class="form-row">
+        <label for="degree1">Highest Academic Degree <span class="star" aria-hidden="true">*</span></label>
+        <input id="degree1" name="degree1" type="text" required aria-required="true" />
+      </div>
+
+      <div class="form-row">
+        <label for="company1">Institution or Organization</label>
+        <input id="company1" name="company1" type="text" />
+      </div>
+
+      <div class="form-row">
+        <label for="telno1">Phone Number</label>
+        <input id="telno1" name="telno1" type="tel" />
+      </div>
+
+      <div class="form-row">
+        <label for="email1">Email <span class="star" aria-hidden="true">*</span></label>
+        <input id="email1" name="email1" type="email" required aria-required="true" />
+      </div>
+
+      <fieldset class="nested-fieldset">
+        <legend>Have you presented at a national conference or taught a college-level, semester-long course? <span class="star" aria-hidden="true">*</span></legend>
+
+        <div class="radio-group">
+          <div class="radio-option">
+            <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio" required aria-required="true" />
+            <label for="natconfexp1_yes">Yes</label>
+          </div>
+          <div class="radio-option">
+            <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio" />
+            <label for="natconfexp1_no">No</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-row">
+        <label for="Speaker1bio">Presenter 1 bio</label>
+        <p class="help-text" id="biohelp">Enter between 50 and 1500 characters.</p>
+        <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="6" minlength="50" maxlength="1500" aria-describedby="biohelp"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend class="outline4">Proposal Information</legend>
+
+      <div class="form-row">
+        <label for="proptitle">Proposal Title <span class="star" aria-hidden="true">*</span></label>
+        <p class="help-text" id="titlehelp">Enter between 10 and 150 characters.</p>
+        <input id="proptitle" name="proptitle" class="reqfield" type="text" minlength="10" maxlength="150" required aria-required="true" aria-describedby="titlehelp" />
+      </div>
+    </fieldset>
+
+    <button type="submit">Submit your proposal</button>
+  </form>
+</main>
+</body>
+</html>
